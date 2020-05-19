@@ -1,21 +1,21 @@
 /*
  * @Author: your name
  * @Date: 2020-05-19 11:36:54
- * @LastEditTime: 2020-05-19 13:31:47
+ * @LastEditTime: 2020-05-19 15:02:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \nuxt-koa-admin\nuxt.config.js
  */ 
+// 添加配置文件
 const config = require('./config/')
-console.log(config)
-console.log(config)
+// nuxt 配置相关
 module.exports = {
   mode: 'universal',
   /*
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: config.projectName || process.env.npm_package_name ,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
