@@ -12,6 +12,12 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest"
   },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "80"
+    }
+  },
   "lint-staged": {
     "*.{js,vue}": "yarn lint",
     "*.{css,vue}": "stylelint"
