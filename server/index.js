@@ -1,24 +1,36 @@
 /*
  * @Author: your name
  * @Date: 2020-05-19 13:49:45
- * @LastEditTime: 2020-05-20 10:18:16
- * @LastEditors: your name
+ * @LastEditTime: 2020-05-20 14:50:33
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Nuxt-Koa-Admin\server\index.js
  */ 
 const Koa = require('koa')
 const consola = require('consola')
 const json = require('koa-json')
-const session = require('koa-generic-session')
+// const session = require('koa-generic-session')
 const bodyParser = require('koa-bodyparser')
 const Redius = require('koa-redis')
+const logger = require('koa-logger')
+const session = require('koa-session')
 const { Nuxt, Builder } = require('nuxt')
 
 // 路由引入
 
 
 const app = new Koa()
+app.keys = ['xunzhaotech']
+app.use(logger())
+app.use(session(app))
+app.use(bodyParser())
 // 引入数据库配置
+
+/**
+ * 使用路由转发请求
+ * @type {[type]}
+ */
+// const router = require('./routers/index.js')()
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
