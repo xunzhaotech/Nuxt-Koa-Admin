@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-05-19 13:49:45
- * @LastEditTime: 2020-05-20 14:50:33
+ * @LastEditTime: 2020-05-20 16:24:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Nuxt-Koa-Admin\server\index.js
@@ -31,6 +31,8 @@ app.use(bodyParser())
  * @type {[type]}
  */
 // const router = require('./routers/index.js')()
+// 引入数据库链接
+const db = require('./config/index.js')
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
