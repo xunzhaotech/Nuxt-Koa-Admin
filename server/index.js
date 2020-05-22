@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-05-19 13:49:45
- * @LastEditTime: 2020-05-20 16:24:13
+ * @LastEditTime: 2020-05-22 11:07:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Nuxt-Koa-Admin\server\index.js
@@ -43,8 +43,8 @@ async function start() {
   const nuxt = new Nuxt(config)
 
   const {
-    host = process.env.HOST || '127.0.0.1',
-    port = process.env.PORT || 3000
+    host = process.env.HOST || '0.0.0.0',
+    port = process.env.PORT || 80
   } = nuxt.options.server
 
   await nuxt.ready()
