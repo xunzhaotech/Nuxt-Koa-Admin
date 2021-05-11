@@ -32,7 +32,7 @@
     "babel-register": "^6.24.1",
     "bluebird": "^3.5.0",
     "cloudinary": "^1.8.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "qiniu": "^6.1.13",
     "sha1": "^1.1.1",
     "speakeasy": "^2.0.0",
